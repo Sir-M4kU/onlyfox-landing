@@ -1,5 +1,4 @@
 ---
-import Navbar from '../components/navbar.astro'
 import Social from '../components/navbar/social-networks.astro'
 
 interface Props {
@@ -13,20 +12,18 @@ const { title } = Astro.props
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="OnlyFox Landing" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="sm:max-w-3xl sm:mx-auto dark:bg-gray-700 dark:text-white">
+	<body class="sm:max-w-3xl sm:mx-auto dark:bg-gray-700 dark:text-white h-[100dvh]">
 		<header>
-			<div class="sm:absolute sm:w-6 sm:left-1 sm:top-2 sm:block hidden">
+			<div class="absolute w-6 left-1 top-24 block">
 				<Social />
 			</div>
-			<Navbar />
 		</header>
-		<main>
+		<main class="h-full">
 			<slot />
 		</main>
 	</body>

@@ -1,7 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Links from '../components/links.astro'
+import { ONLYFOX_LINKS } from '../utils/constants'
 ---
 
 <Layout title="OnlyFox">
-  <h1>Hello world</h1>
+  <div class="h-full flex flex-col items-center justify-center">
+    <figure class="sm:max-w-2xl max-w-xs">
+      <img
+        src="/anny_flashbang.webp"
+        alt="Anny the fox"
+      />
+    </figure>
+    <h2 class="sm:text-6xl text-3xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-gray-400 to-pink-300">
+      OnlyFox
+    </h2>
+    <div class="flex gap-5 mt-2">
+      <Links
+        title='Mega Links'
+        links={ONLYFOX_LINKS.Mega}
+      />
+      <Links
+        title="Hic's Compilation"
+        links={ONLYFOX_LINKS.Hics}
+      />
+    </div>
+  </div>
 </Layout>
