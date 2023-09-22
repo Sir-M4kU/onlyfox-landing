@@ -1,3 +1,15 @@
-<div>
-  <!-- TODO: LINKS ADD ALL LINKS FOR THE PAGE -->
+---
+import { ONLYFOX_LINKS } from '../../utils/constants'
+import Links from '../links.astro'
+---
+
+<div class="flex sm:gap-4 gap-2">
+  <Links
+    title='Mega Links'
+    links={ONLYFOX_LINKS.Mega}
+  />
+  <Links
+    title="Hic's Compilation"
+    links={ONLYFOX_LINKS.Hics}
+  />
 </div>
