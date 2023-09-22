@@ -1,0 +1,38 @@
+---
+import Navbar from '../components/navbar.astro'
+import Social from '../components/navbar/social-networks.astro'
+
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="sm:max-w-3xl sm:mx-auto dark:bg-gray-700 dark:text-white">
+		<header>
+			<div class="sm:absolute sm:w-6 sm:left-1 sm:top-2 sm:block hidden">
+				<Social />
+			</div>
+			<Navbar />
+		</header>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
+<style is:global>
+	html {
+		font-family: system-ui, sans-serif;
+	}
+</style>
