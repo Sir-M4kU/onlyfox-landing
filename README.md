@@ -1,23 +1,3 @@
-<style>
-  header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  header h1 {
-    margin: 0;
-  }
-
-  .script {
-    background: #333;
-  }
-
-  .script-p {
-    margin: 0;
-  }
-  </style>
-
 <header>
   <h1>
     🦊 · OnlyFox Landing Page · 🦊
