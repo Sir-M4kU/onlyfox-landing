@@ -6,5 +6,5 @@ import tailwind from "@astrojs/tailwind"
 export default defineConfig({
   integrations: [tailwind()],
   site: 'https://sir-m4ku.github.io',
-  base: 'onlyfox-landing'
+  base: '/onlyfox-landing'
 })
