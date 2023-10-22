@@ -3,13 +3,15 @@ import { ONLYFOX_LINKS } from '../../utils/constants'
 import Links from '../links.astro'
 ---
 
-<div class="flex sm:gap-4 gap-2">
-  <Links
-    title='Mega Links'
-    links={ONLYFOX_LINKS.Mega}
-  />
-  <Links
-    title="Hic's Compilation"
-    links={ONLYFOX_LINKS.Hics}
-  />
+<div class="flex sm:gap-4 gap-2 p-2">
+    <Links
+            title='Mega Links'
+            links={ONLYFOX_LINKS.Mega}
+            id="mega-dropdown"
+    />
+    <Links
+            title="Hic's Compilation"
+            links={ONLYFOX_LINKS.Hics}
+            id="hic-dropdown"
+    />
 </div>
